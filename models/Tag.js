@@ -6,12 +6,16 @@ class Tag extends Model {}
 
 Tag.init(
   {
-    // define columns
+    // set up id column and tag_name column to match seeds
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
       autoIncrement: true,
+  },
+  tag_name: {
+      type: DataTypes.STRING,
+  },
   },
   {
     sequelize,

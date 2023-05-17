@@ -9,7 +9,7 @@ class Product extends Model {}
 // set up fields and rules for Product model
 Product.init(
   {
-    // define columns
+    // set up id, product_name, price, stock, and category_id columns to match seeds, use validate to make sure the data is being entered correctly
   id: {
       type: DataTypes.INTEGER,
       allowNull: false,
@@ -35,6 +35,7 @@ Product.init(
           isNumeric: true,
       },
   },
+  // In the category_id column, we define the foreign key relationship to the category model,
   category_id: {
       type: DataTypes.INTEGER,
       references: {
