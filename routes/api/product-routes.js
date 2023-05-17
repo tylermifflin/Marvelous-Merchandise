@@ -16,6 +16,13 @@ router.get('/', (req, res) => {
      }
   ]
   })
+  // converting the product data to JSON
+  .then((products) => res.json(products))
+  .catch((err) => {
+    console.log(err);
+    res.status(500).json(err);
+  }
+  );
 
 });
 
