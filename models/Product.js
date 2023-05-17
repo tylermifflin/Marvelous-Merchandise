@@ -20,6 +20,13 @@ Product.init(
       type: DataTypes.STRING,
       allowNull: false,
   },
+  price: {
+      type: DataTypes.DECIMAL,
+      allowNull: false,
+      validate: {
+          isDecimal: true,
+      },
+  },
   {
     sequelize,
     timestamps: false,
