@@ -14,6 +14,12 @@ router.get('/', (req, res) => {
     },
   ],
 })
+  .then((tags) => res.json(tags))
+  .catch((err) => {
+    console.log(err);
+    res.status(500).json(err);
+  }
+  );
 });
 
 router.get('/:id', (req, res) => {
