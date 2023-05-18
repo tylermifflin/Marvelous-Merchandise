@@ -35,6 +35,13 @@ router.get('/:id', (req, res) => {
       through: ProductTag,
     },
   ],
+})
+  .then((tags) => res.json(tags))
+  .catch((err) => {
+    console.log(err);
+    res.status(500).json(err);
+  }
+  );
 });
 
 router.post('/', (req, res) => {
