@@ -15,7 +15,8 @@ Here is a link to the video showing the functionality of the app:
  https://drive.google.com/file/d/1LXNhiIw-RwDMrs_MU9P8vGXZrkLj6mH3/view?usp=share_link
 
  Here is a link to a screenshot of the Insomnia app showing the api routes:
- Screenshot 2023-05-22 at 2.46.40 PM.png
+ ![Screenshot 2023-05-22 at 2 46 40 PM](https://github.com/tylermifflin/Marvelous-Merchandise/assets/123903709/5f0779f5-b4b4-4a47-8a5d-3aabe3936bde)
+
 
 ## Installation
 The user will need to have Node and MySQL installed on their computer. They will then need to copy the repository and open integrated terminal in package.json and run npm i to get all of the dependencies. 
